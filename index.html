@@ -13,6 +13,7 @@
     <p>Test Layout 1</p>
     <div id="container">
       <!--each reading in [ 429, 620, 28, 100, 989 ]-->
+      <!--each reading in [{type:'temp', entypo:"entypo-adjust",output:427}, {type:'moisture', entypo:"entypo-droplet",output:100}, {type:'electricity', entypo:"entypo-flash",output:2},{type:'tilt', entypo:"entypo-gauge", output: 'Open'}]-->
       <div class="card temp"><img src="img/wine-cellar-temp.jpg">
         <div class="details">
           <div class="type entypo-adjust"></div>
@@ -28,7 +29,7 @@
           <div class="type entypo-droplet"></div>
           <h2>100</h2>
           <div class="info">
-            <p class="name">Wine Cellar</p>
+            <p class="name">Office Plant</p>
             <p class="update-time">10 min ago</p>
           </div>
         </div>
@@ -38,7 +39,7 @@
           <div class="type entypo-flash"></div>
           <h2>2</h2>
           <div class="info">
-            <p class="name">Wine Cellar</p>
+            <p class="name">Fridge</p>
             <p class="update-time">10 min ago</p>
           </div>
         </div>
@@ -48,10 +49,17 @@
           <div class="type entypo-gauge"></div>
           <h2>Open</h2>
           <div class="info">
-            <p class="name">Wine Cellar</p>
+            <p class="name">Garage</p>
             <p class="update-time">10 min ago</p>
           </div>
         </div>
+      </div>
+      <div class="card new">
+        <div class="plus">+</div>
+        <h3>
+           
+          Add a <br>new sensor
+        </h3>
       </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
