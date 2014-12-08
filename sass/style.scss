@@ -10,6 +10,11 @@ $red: #d84777;
 $orange: #e0981b;
 $purple: #cca8e4;
 
+@mixin font-playfair($font-size){
+    font: italic 900 #{$font-size}/1.2em 'Playfair Display', serif;
+}
+$font-fairplay: italic 900 36px/1.2em 'Playfair Display', serif;
+
 
 /* Entype Icon Fonts - Temp Use*/
 [class*="entypo-"]:before {
@@ -158,5 +163,27 @@ body{
 .multi-sensor{
 
 }
+/*-------- Add a Card --------*/
+.new{
+    opacity:0.4;
+    -webkit-transition: opacity 300ms ease-out;
 
+    &:hover, &:active{
+        opacity:1;
+    }
+    .plus{
+        display: none;
+        width:100%;
+        text-align:center;
+        font-size: 60px;
+        font-weight:100;
+        margin-top: 50px;
+        @include font-playfair(60px)
+    }
+    h3{
+        margin-top:100px;
+        text-align:center;
+        @include font-playfair(36px);
+    }
+}
 
